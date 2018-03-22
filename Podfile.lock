@@ -32,6 +32,9 @@ PODS:
   - ReSwift (4.0.1)
   - RxSwift (4.1.2)
   - SwiftLint (0.25.0)
+  - Swinject (2.2.0)
+  - SwinjectStoryboard (1.1.2):
+    - Swinject (~> 2.1)
 
 DEPENDENCIES:
   - APIKit
@@ -44,6 +47,8 @@ DEPENDENCIES:
   - ReSwift
   - RxSwift
   - SwiftLint
+  - Swinject
+  - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   APIKit: a39ff72ac44efc15513fd1b98800f63c525be61b
@@ -58,7 +63,9 @@ SPEC CHECKSUMS:
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  Swinject: 4ca48bca7de5f398229a26abe1ac902b9f3ee541
+  SwinjectStoryboard: 92e75763c3299cdf627bef98a5180dc894864336
 
-PODFILE CHECKSUM: 0c790c53c606b9c6e6cb562d853873256e9cb6e1
+PODFILE CHECKSUM: bb31095b4d5f5a5d1f38dc1c53a03dab707a6cf2
 
 COCOAPODS: 1.4.0

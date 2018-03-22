@@ -12,23 +12,17 @@ import APIKit
 
 final class FeedViewController: UITableViewController {
     var store: AppStore!
-    private let stubProvider = StubProvider()
+    var load: ActionCreator!
+
+    private let stubProvider = StubProvider() // TODO: APIが実装されたら削除する
 
     private var posts: [Post] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        stubProvider.stub() // TODO: APIが実装されたら削除する
 
-        store = AppStore(
-            reducer: appReducer,
-            state: nil
-        )
-
-        stubProvider.stub()
-
-        let session = APIKit.Session(adapter: URLSessionAdapter(configuration: URLSessionConfiguration.default))
-        let postRepository = PostNetworkingRepository(session: session)
-        store.dispatch(ShowFeed.load(postRepository: postRepository))
+        store.dispatch(load)
     }
 
     override func viewWillAppear(_ animated: Bool) {

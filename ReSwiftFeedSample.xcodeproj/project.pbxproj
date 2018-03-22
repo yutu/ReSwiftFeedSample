@@ -32,6 +32,11 @@
 		DC517241206365DE00D53BE5 /* StubProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51723F2063659900D53BE5 /* StubProvider.swift */; };
 		DC5172422063673F00D53BE5 /* FeedStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51723D206364BB00D53BE5 /* FeedStub.swift */; };
 		DC5172452063693100D53BE5 /* PostNetworkingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5172442063693100D53BE5 /* PostNetworkingRepository.swift */; };
+		DC51724820636D8900D53BE5 /* ContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51724720636D8900D53BE5 /* ContainerProvider.swift */; };
+		DC51724A20636DB000D53BE5 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51724920636DB000D53BE5 /* ApplicationAssembly.swift */; };
+		DC51724C20636DE500D53BE5 /* InfrastructureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51724B20636DE500D53BE5 /* InfrastructureAssembly.swift */; };
+		DC51724E20636E8A00D53BE5 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51724D20636E8A00D53BE5 /* SwinjectStoryboard+Setup.swift */; };
+		DC51725020636E9F00D53BE5 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51724F20636E9F00D53BE5 /* PresentationAssembly.swift */; };
 		DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC684C8720632E070062D6B4 /* AppDelegate.swift */; };
 		DC684C8F20632E070062D6B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC684C8E20632E070062D6B4 /* Assets.xcassets */; };
 		DC684C9220632E070062D6B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */; };
@@ -78,6 +83,11 @@
 		DC51723D206364BB00D53BE5 /* FeedStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStub.swift; sourceTree = "<group>"; };
 		DC51723F2063659900D53BE5 /* StubProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubProvider.swift; sourceTree = "<group>"; };
 		DC5172442063693100D53BE5 /* PostNetworkingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetworkingRepository.swift; sourceTree = "<group>"; };
+		DC51724720636D8900D53BE5 /* ContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerProvider.swift; sourceTree = "<group>"; };
+		DC51724920636DB000D53BE5 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		DC51724B20636DE500D53BE5 /* InfrastructureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureAssembly.swift; sourceTree = "<group>"; };
+		DC51724D20636E8A00D53BE5 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
+		DC51724F20636E9F00D53BE5 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
 		DC684C8420632E070062D6B4 /* ReSwiftFeedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftFeedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC684C8720632E070062D6B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC684C8E20632E070062D6B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,6 +224,18 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		DC51724620636D5B00D53BE5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DC51724D20636E8A00D53BE5 /* SwinjectStoryboard+Setup.swift */,
+				DC51724F20636E9F00D53BE5 /* PresentationAssembly.swift */,
+				DC51724920636DB000D53BE5 /* ApplicationAssembly.swift */,
+				DC51724720636D8900D53BE5 /* ContainerProvider.swift */,
+				DC51724B20636DE500D53BE5 /* InfrastructureAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		DC684C7B20632E070062D6B4 = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				DC684C8720632E070062D6B4 /* AppDelegate.swift */,
+				DC51724620636D5B00D53BE5 /* DI */,
 				DC9C227A206332EF0028F2E3 /* Presentation */,
 				DC9C228A20634EE80028F2E3 /* Application */,
 				DC9C228F206354E00028F2E3 /* Domain */,
@@ -489,6 +512,8 @@
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -499,6 +524,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,20 +610,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9C228E20634FD90028F2E3 /* ShowFeed.swift in Sources */,
+				DC51724E20636E8A00D53BE5 /* SwinjectStoryboard+Setup.swift in Sources */,
 				DC5172422063673F00D53BE5 /* FeedStub.swift in Sources */,
 				DC9C2291206354F10028F2E3 /* Post.swift in Sources */,
 				DC51721E20635F0700D53BE5 /* FeedEndpoint.swift in Sources */,
+				DC51725020636E9F00D53BE5 /* PresentationAssembly.swift in Sources */,
 				DC5172362063648500D53BE5 /* HTTPStub.swift in Sources */,
 				DC9C228C20634F130028F2E3 /* Application.swift in Sources */,
 				DC51721720635E1700D53BE5 /* APIKit.Session+Rx.swift in Sources */,
 				DC517241206365DE00D53BE5 /* StubProvider.swift in Sources */,
 				DC5172382063648500D53BE5 /* WebAPIEndpointStub.swift in Sources */,
+				DC51724C20636DE500D53BE5 /* InfrastructureAssembly.swift in Sources */,
 				DC9C2294206355610028F2E3 /* PostRepository.swift in Sources */,
 				DC51722120635F5700D53BE5 /* Post+Decodable.swift in Sources */,
+				DC51724820636D8900D53BE5 /* ContainerProvider.swift in Sources */,
 				DC51722320635FC300D53BE5 /* Transformer.swift in Sources */,
 				DC9C2282206346330028F2E3 /* FeedViewController.swift in Sources */,
 				DC9C22842063486B0028F2E3 /* FeedTableViewCell.swift in Sources */,
 				DC5172372063648500D53BE5 /* ImageStub.swift in Sources */,
+				DC51724A20636DB000D53BE5 /* ApplicationAssembly.swift in Sources */,
 				DC5172452063693100D53BE5 /* PostNetworkingRepository.swift in Sources */,
 				DC51721920635E4000D53BE5 /* Request.swift in Sources */,
 				DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */,
