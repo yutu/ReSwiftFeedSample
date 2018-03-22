@@ -16,6 +16,8 @@
 		DC9C2282206346330028F2E3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C2281206346330028F2E3 /* FeedViewController.swift */; };
 		DC9C22842063486B0028F2E3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C22832063486B0028F2E3 /* FeedTableViewCell.swift */; };
 		DC9C228620634B0F0028F2E3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9C228820634B0F0028F2E3 /* Feed.storyboard */; };
+		DC9C228C20634F130028F2E3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C228B20634F130028F2E3 /* Application.swift */; };
+		DC9C228E20634FD90028F2E3 /* ShowFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C228D20634FD90028F2E3 /* ShowFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DC9C2281206346330028F2E3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		DC9C22832063486B0028F2E3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		DC9C228720634B0F0028F2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
+		DC9C228B20634F130028F2E3 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		DC9C228D20634FD90028F2E3 /* ShowFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			children = (
 				DC684C8720632E070062D6B4 /* AppDelegate.swift */,
 				DC9C227A206332EF0028F2E3 /* Presentation */,
+				DC9C228A20634EE80028F2E3 /* Application */,
 				DC684C8E20632E070062D6B4 /* Assets.xcassets */,
 				DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */,
 				DC684C9320632E070062D6B4 /* Info.plist */,
@@ -136,6 +141,15 @@
 				DC9C22832063486B0028F2E3 /* FeedTableViewCell.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DC9C228A20634EE80028F2E3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C228B20634F130028F2E3 /* Application.swift */,
+				DC9C228D20634FD90028F2E3 /* ShowFeed.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		F4D42DA615EAB5E7DF7452FE /* Pods */ = {
@@ -297,9 +311,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftFeedSample/Pods-ReSwiftFeedSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -381,6 +398,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9C228E20634FD90028F2E3 /* ShowFeed.swift in Sources */,
+				DC9C228C20634F130028F2E3 /* Application.swift in Sources */,
 				DC9C2282206346330028F2E3 /* FeedViewController.swift in Sources */,
 				DC9C22842063486B0028F2E3 /* FeedTableViewCell.swift in Sources */,
 				DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */,

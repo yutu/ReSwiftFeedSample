@@ -7,21 +7,32 @@
 //
 
 import UIKit
+import ReSwift
 
 final class FeedViewController: UITableViewController {
-    typealias Author = ()
-    typealias Post = (body: String, photo: UIImage?, createdAt: Date, authorName: String, authorIcon: UIImage)
+    var store: AppStore!
 
     private var posts: [Post] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        posts = [
-            Post(body: "僕のかわいいエリザベスの写真です！", photo: #imageLiteral(resourceName: "post_1"), createdAt: Date(timeIntervalSince1970: 1521860400), authorName: "yutu", authorIcon: #imageLiteral(resourceName: "user_icon_1")),
-            Post(body: "僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！", photo: #imageLiteral(resourceName: "post_2"), createdAt: Date(timeIntervalSince1970: 1521770400), authorName: "yutu", authorIcon: #imageLiteral(resourceName: "user_icon_1")),
-            Post(body: "今日はドッグランに行ってきました！エリザベスもポン吉もいっぱい走りました！", photo: nil, createdAt: Date(timeIntervalSince1970: 1521680400), authorName: "yutu", authorIcon: #imageLiteral(resourceName: "user_icon_1"))
-        ]
+        store = AppStore(
+            reducer: appReducer,
+            state: nil
+        )
+
+        store.dispatch(ShowFeed.load())
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        store.subscribe(self) { $0.select { $0.showFeed } }
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        store.unsubscribe(self)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,16 +43,18 @@ final class FeedViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         if let cell = cell as? FeedTableViewCell {
-            let post = posts[indexPath.row]
-            cell.configure(
-                body: post.body,
-                photo: post.photo,
-                createdAt: post.createdAt,
-                authorName: post.authorName,
-                authorIcon: post.authorIcon
-            )
+            cell.configure(post: posts[indexPath.row])
         }
 
         return cell
+    }
+}
+
+// MARK: - StoreSubscriber
+
+extension FeedViewController: StoreSubscriber {
+    func newState(state: ShowFeed.State) {
+        posts = state.posts
+        tableView.reloadData()
     }
 }

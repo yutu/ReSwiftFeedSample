@@ -11,12 +11,14 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
   - Quick (1.2.0)
+  - ReSwift (4.0.1)
   - SwiftLint (0.25.0)
 
 DEPENDENCIES:
   - Nimble
   - Nimble-Snapshots
   - Quick
+  - ReSwift
   - SwiftLint
 
 SPEC CHECKSUMS:
@@ -24,8 +26,9 @@ SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 7cc3a03cb3a2394d6ffded358742e56a41c2a5cc
+PODFILE CHECKSUM: 293b748525b80a6bfc2b384e7f58b140d583e5bc
 
 COCOAPODS: 1.4.0

@@ -33,6 +33,7 @@ final class FeedViewControllerSpec: QuickSpec {
                     var frame = window.frame
                     frame.size.height = 1000
                     window.frame = frame
+                    RunLoop.current.run(until: Date(timeIntervalSinceNow: 0.2))
                 }
 
                 it("displays correctly") {
