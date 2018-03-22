@@ -9,9 +9,6 @@
 import UIKit
 
 final class FeedViewController: UITableViewController {
-    typealias Author = ()
-    typealias Post = (body: String, photo: UIImage?, createdAt: Date, authorName: String, authorIcon: UIImage)
-
     private var posts: [Post] = []
 
     override func viewDidLoad() {
@@ -32,14 +29,7 @@ final class FeedViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         if let cell = cell as? FeedTableViewCell {
-            let post = posts[indexPath.row]
-            cell.configure(
-                body: post.body,
-                photo: post.photo,
-                createdAt: post.createdAt,
-                authorName: post.authorName,
-                authorIcon: post.authorIcon
-            )
+            cell.configure(post: posts[indexPath.row])
         }
 
         return cell

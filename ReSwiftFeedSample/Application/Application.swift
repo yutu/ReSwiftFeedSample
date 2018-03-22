@@ -16,8 +16,11 @@ typealias ActionCreator = AppStore.ActionCreator
 typealias AsyncActionCreator = AppStore.AsyncActionCreator
 
 struct AppState: StateType {
+    let showFeed: ShowFeed.State
 }
 
 func appReducer(action: Action, state: AppState?) -> AppState {
-    return AppState()
+    return AppState(
+        showFeed: ShowFeed.reducer(action, state?.showFeed)
+    )
 }

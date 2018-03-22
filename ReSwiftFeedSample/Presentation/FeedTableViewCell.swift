@@ -15,20 +15,20 @@ final class FeedTableViewCell: UITableViewCell {
     @IBOutlet private weak var photoImageView: UIImageView!
     @IBOutlet private weak var bodyLabel: UILabel!
 
-    func configure(body: String, photo: UIImage?, createdAt: Date, authorName: String, authorIcon: UIImage) {
-        authorIconImageView.image = authorIcon
-        authorNameLabel.text = authorName
+    func configure(post: Post) {
+        authorIconImageView.image = post.authorIcon
+        authorNameLabel.text = post.authorName
 
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja_JP")
         dateFormatter.calendar = Calendar(identifier: .gregorian)
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .short
-        createdAtLabel.text = dateFormatter.string(from: createdAt)
+        createdAtLabel.text = dateFormatter.string(from: post.createdAt)
 
-        photoImageView.image = photo
-        photoImageView.isHidden = photo == nil
+        photoImageView.image = post.photo
+        photoImageView.isHidden = post.photo == nil
 
-        bodyLabel.text = body
+        bodyLabel.text = post.body
     }
 }
