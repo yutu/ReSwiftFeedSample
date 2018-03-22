@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		6F8B03B44F0ED8992E0F3A42 /* Pods_ReSwiftFeedSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77698B9136113B416FFE8A80 /* Pods_ReSwiftFeedSampleTests.framework */; };
 		D254A4A2AEFEF6AC92B0C89E /* Pods_ReSwiftFeedSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C0AFB1A8AC6BA0352F182 /* Pods_ReSwiftFeedSample.framework */; };
+		DC51721720635E1700D53BE5 /* APIKit.Session+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51721620635E1700D53BE5 /* APIKit.Session+Rx.swift */; };
+		DC51721920635E4000D53BE5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51721820635E4000D53BE5 /* Request.swift */; };
+		DC51721E20635F0700D53BE5 /* FeedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51721D20635F0700D53BE5 /* FeedEndpoint.swift */; };
+		DC51722120635F5700D53BE5 /* Post+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722020635F5700D53BE5 /* Post+Decodable.swift */; };
+		DC51722320635FC300D53BE5 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722220635FC300D53BE5 /* Transformer.swift */; };
 		DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC684C8720632E070062D6B4 /* AppDelegate.swift */; };
 		DC684C8F20632E070062D6B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC684C8E20632E070062D6B4 /* Assets.xcassets */; };
 		DC684C9220632E070062D6B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */; };
@@ -42,6 +47,11 @@
 		5AE4D1FA958DF2338A983509 /* Pods-ReSwiftFeedSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftFeedSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftFeedSampleTests/Pods-ReSwiftFeedSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77698B9136113B416FFE8A80 /* Pods_ReSwiftFeedSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwiftFeedSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10FDE077CD0EB969F364625 /* Pods-ReSwiftFeedSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftFeedSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftFeedSampleTests/Pods-ReSwiftFeedSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC51721620635E1700D53BE5 /* APIKit.Session+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIKit.Session+Rx.swift"; sourceTree = "<group>"; };
+		DC51721820635E4000D53BE5 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		DC51721D20635F0700D53BE5 /* FeedEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpoint.swift; sourceTree = "<group>"; };
+		DC51722020635F5700D53BE5 /* Post+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Decodable.swift"; sourceTree = "<group>"; };
+		DC51722220635FC300D53BE5 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
 		DC684C8420632E070062D6B4 /* ReSwiftFeedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftFeedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC684C8720632E070062D6B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC684C8E20632E070062D6B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +102,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC51721320635DD300D53BE5 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				DC51721420635DF300D53BE5 /* Web API */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		DC51721420635DF300D53BE5 /* Web API */ = {
+			isa = PBXGroup;
+			children = (
+				DC51721F20635F4D00D53BE5 /* Decodable */,
+				DC51721C20635EE900D53BE5 /* Endpoint */,
+				DC51721520635DFD00D53BE5 /* Networking */,
+			);
+			path = "Web API";
+			sourceTree = "<group>";
+		};
+		DC51721520635DFD00D53BE5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DC51721620635E1700D53BE5 /* APIKit.Session+Rx.swift */,
+				DC51721820635E4000D53BE5 /* Request.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC51721C20635EE900D53BE5 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				DC51721D20635F0700D53BE5 /* FeedEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		DC51721F20635F4D00D53BE5 /* Decodable */ = {
+			isa = PBXGroup;
+			children = (
+				DC51722220635FC300D53BE5 /* Transformer.swift */,
+				DC51722020635F5700D53BE5 /* Post+Decodable.swift */,
+			);
+			path = Decodable;
+			sourceTree = "<group>";
+		};
 		DC684C7B20632E070062D6B4 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +173,7 @@
 				DC9C227A206332EF0028F2E3 /* Presentation */,
 				DC9C228A20634EE80028F2E3 /* Application */,
 				DC9C228F206354E00028F2E3 /* Domain */,
+				DC51721320635DD300D53BE5 /* Infrastructure */,
 				DC9C2295206356DE0028F2E3 /* Resource */,
 				DC684C9320632E070062D6B4 /* Info.plist */,
 			);
@@ -460,10 +515,15 @@
 			files = (
 				DC9C228E20634FD90028F2E3 /* ShowFeed.swift in Sources */,
 				DC9C2291206354F10028F2E3 /* Post.swift in Sources */,
+				DC51721E20635F0700D53BE5 /* FeedEndpoint.swift in Sources */,
 				DC9C228C20634F130028F2E3 /* Application.swift in Sources */,
+				DC51721720635E1700D53BE5 /* APIKit.Session+Rx.swift in Sources */,
 				DC9C2294206355610028F2E3 /* PostRepository.swift in Sources */,
+				DC51722120635F5700D53BE5 /* Post+Decodable.swift in Sources */,
+				DC51722320635FC300D53BE5 /* Transformer.swift in Sources */,
 				DC9C2282206346330028F2E3 /* FeedViewController.swift in Sources */,
 				DC9C22842063486B0028F2E3 /* FeedTableViewCell.swift in Sources */,
+				DC51721920635E4000D53BE5 /* Request.swift in Sources */,
 				DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
