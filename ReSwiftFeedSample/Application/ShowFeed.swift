@@ -9,8 +9,6 @@
 import Foundation
 import ReSwift
 
-typealias Post = (body: String, photo: UIImage?, createdAt: Date, authorName: String, authorIcon: UIImage)
-
 struct ShowFeed {}
 
 // MARK: - ShowFeed - State
@@ -41,18 +39,13 @@ extension ShowFeed {
         case failLoading(error: Error)
     }
 
-    static func load() -> ActionCreator {
+    static func load(postRepository: PostRepository) -> ActionCreator {
         return { (state, store) in
-            // TODO
-            let posts = [
-                Post(body: "僕のかわいいエリザベスの写真です！", photo: #imageLiteral(resourceName: "post_1"), createdAt: Date(timeIntervalSince1970: 1521860400), authorName: "yutu", authorIcon: #imageLiteral(resourceName: "user_icon_1")),
-                Post(body: "僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！", photo: #imageLiteral(resourceName: "post_2"), createdAt: Date(timeIntervalSince1970: 1521770400), authorName: "yutu", authorIcon: #imageLiteral(resourceName: "user_icon_1")),
-                Post(body: "今日はドッグランに行ってきました！エリザベスもポン吉もいっぱい走りました！", photo: nil, createdAt: Date(timeIntervalSince1970: 1521680400), authorName: "yutu", authorIcon: #imageLiteral(resourceName: "user_icon_1"))
-            ]
-
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            _ = postRepository.load().subscribe(onSuccess: { (posts) in
                 store.dispatch(Action.succeedLoading(posts: posts))
-            }
+            }, onError: { (error) in
+                store.dispatch(Action.failLoading(error: error))
+            })
 
             return Action.loading
         }
