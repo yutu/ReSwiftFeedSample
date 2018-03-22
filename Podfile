@@ -3,6 +3,8 @@ platform :ios, '10.3'
 target 'ReSwiftFeedSample' do
   use_frameworks!
 
+  pod 'Swinject'
+  pod 'SwinjectStoryboard'
   pod 'SwiftLint'
   pod 'ReSwift'
   pod 'RxSwift'
