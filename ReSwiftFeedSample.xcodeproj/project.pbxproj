@@ -10,9 +10,10 @@
 		6F8B03B44F0ED8992E0F3A42 /* Pods_ReSwiftFeedSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77698B9136113B416FFE8A80 /* Pods_ReSwiftFeedSampleTests.framework */; };
 		D254A4A2AEFEF6AC92B0C89E /* Pods_ReSwiftFeedSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C0AFB1A8AC6BA0352F182 /* Pods_ReSwiftFeedSample.framework */; };
 		DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC684C8720632E070062D6B4 /* AppDelegate.swift */; };
-		DC684C8D20632E070062D6B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC684C8B20632E070062D6B4 /* Main.storyboard */; };
 		DC684C8F20632E070062D6B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC684C8E20632E070062D6B4 /* Assets.xcassets */; };
 		DC684C9220632E070062D6B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */; };
+		DC684CAE206331EE0062D6B4 /* FeedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC684CAD206331EE0062D6B4 /* FeedViewControllerSpec.swift */; };
+		DC9C227C206332FA0028F2E3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9C227B206332FA0028F2E3 /* Feed.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,14 @@
 		B10FDE077CD0EB969F364625 /* Pods-ReSwiftFeedSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwiftFeedSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwiftFeedSampleTests/Pods-ReSwiftFeedSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC684C8420632E070062D6B4 /* ReSwiftFeedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftFeedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC684C8720632E070062D6B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC684C8C20632E070062D6B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC684C8E20632E070062D6B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC684C9120632E070062D6B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC684C9320632E070062D6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC684C9820632E080062D6B4 /* ReSwiftFeedSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSwiftFeedSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC684C9E20632E080062D6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC684CAC206331EE0062D6B4 /* ReSwiftFeedSampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReSwiftFeedSampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC684CAD206331EE0062D6B4 /* FeedViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerSpec.swift; sourceTree = "<group>"; };
+		DC9C227B206332FA0028F2E3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DC684C8720632E070062D6B4 /* AppDelegate.swift */,
-				DC684C8B20632E070062D6B4 /* Main.storyboard */,
+				DC9C227A206332EF0028F2E3 /* Presentation */,
 				DC684C8E20632E070062D6B4 /* Assets.xcassets */,
 				DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */,
 				DC684C9320632E070062D6B4 /* Info.plist */,
@@ -107,8 +110,26 @@
 			isa = PBXGroup;
 			children = (
 				DC684C9E20632E080062D6B4 /* Info.plist */,
+				DC684CAC206331EE0062D6B4 /* ReSwiftFeedSampleTests-Bridging-Header.h */,
+				DC684CAB206331DA0062D6B4 /* Presentation */,
 			);
 			path = ReSwiftFeedSampleTests;
+			sourceTree = "<group>";
+		};
+		DC684CAB206331DA0062D6B4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DC684CAD206331EE0062D6B4 /* FeedViewControllerSpec.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DC9C227A206332EF0028F2E3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C227B206332FA0028F2E3 /* Feed.storyboard */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		F4D42DA615EAB5E7DF7452FE /* Pods */ = {
@@ -183,6 +204,7 @@
 					};
 					DC684C9720632E080062D6B4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DC684C8320632E070062D6B4;
 					};
@@ -214,7 +236,7 @@
 			files = (
 				DC684C9220632E070062D6B4 /* LaunchScreen.storyboard in Resources */,
 				DC684C8F20632E070062D6B4 /* Assets.xcassets in Resources */,
-				DC684C8D20632E070062D6B4 /* Main.storyboard in Resources */,
+				DC9C227C206332FA0028F2E3 /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC684CAE206331EE0062D6B4 /* FeedViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,14 +399,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DC684C8B20632E070062D6B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC684C8C20632E070062D6B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -538,11 +553,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReSwiftFeedSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.yutu.ReSwiftFeedSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReSwiftFeedSampleTests/ReSwiftFeedSampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSwiftFeedSample.app/ReSwiftFeedSample";
@@ -555,11 +573,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReSwiftFeedSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.yutu.ReSwiftFeedSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReSwiftFeedSampleTests/ReSwiftFeedSampleTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSwiftFeedSample.app/ReSwiftFeedSample";
