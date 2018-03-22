@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Recruit Marketing Partners Co., Ltd. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import RxSwift
 
 // swiftlint:disable force_unwrapping
@@ -18,18 +18,18 @@ struct PostRepository {
             Post(
                 id: 3,
                 body: "僕のかわいいエリザベスの写真です！",
-                photo: UIImage(contentsOfFile: Bundle.main.path(forResource: "post_1", ofType: "png")!)!,
+                photo: Bundle.main.url(forResource: "post_1", withExtension: "png")!,
                 createdAt: Date(timeIntervalSince1970: 1521860400),
                 authorName: "yutu",
-                authorIcon: UIImage(contentsOfFile: Bundle.main.path(forResource: "user_icon_1", ofType: "png")!)!
+                authorIcon: Bundle.main.url(forResource: "user_icon_1", withExtension: "png")!
             ),
             Post(
                 id: 2,
                 body: "僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！",
-                photo: UIImage(contentsOfFile: Bundle.main.path(forResource: "post_2", ofType: "png")!),
+                photo: Bundle.main.url(forResource: "post_2", withExtension: "png")!,
                 createdAt: Date(timeIntervalSince1970: 1521770400),
                 authorName: "yutu",
-                authorIcon: UIImage(contentsOfFile: Bundle.main.path(forResource: "user_icon_1", ofType: "png")!)!
+                authorIcon: Bundle.main.url(forResource: "user_icon_1", withExtension: "png")!
             ),
             Post(
                 id: 1,
@@ -37,7 +37,7 @@ struct PostRepository {
                 photo: nil,
                 createdAt: Date(timeIntervalSince1970: 1521680400),
                 authorName: "yutu",
-                authorIcon: UIImage(contentsOfFile: Bundle.main.path(forResource: "user_icon_1", ofType: "png")!)!
+                authorIcon: Bundle.main.url(forResource: "user_icon_1", withExtension: "png")!
             )
         ]
 

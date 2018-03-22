@@ -6,15 +6,15 @@
 //  Copyright © 2018年 Recruit Marketing Partners Co., Ltd. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct Post: Equatable {
     let id: Int
     let body: String
-    let photo: UIImage?
+    let photo: URL?
     let createdAt: Date
     let authorName: String
-    let authorIcon: UIImage
+    let authorIcon: URL
 }
 
 // MARK: - Equatable

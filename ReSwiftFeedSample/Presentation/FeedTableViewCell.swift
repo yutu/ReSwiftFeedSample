@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class FeedTableViewCell: UITableViewCell {
     @IBOutlet private weak var authorIconImageView: UIImageView!
@@ -16,7 +17,7 @@ final class FeedTableViewCell: UITableViewCell {
     @IBOutlet private weak var bodyLabel: UILabel!
 
     func configure(post: Post) {
-        authorIconImageView.image = post.authorIcon
+        authorIconImageView.kf.setImage(with: post.authorIcon)
         authorNameLabel.text = post.authorName
 
         let dateFormatter = DateFormatter()
@@ -26,7 +27,7 @@ final class FeedTableViewCell: UITableViewCell {
         dateFormatter.timeStyle = .short
         createdAtLabel.text = dateFormatter.string(from: post.createdAt)
 
-        photoImageView.image = post.photo
+        photoImageView.kf.setImage(with: post.photo)
         photoImageView.isHidden = post.photo == nil
 
         bodyLabel.text = post.body
