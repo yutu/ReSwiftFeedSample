@@ -10,7 +10,7 @@ import Foundation
 import APIKit
 import Himotoki
 
-struct PostsRequest: Request {
+struct FeedRequest: Request {
     struct Response: Himotoki.Decodable {
         let post: [Post]
 
@@ -21,7 +21,7 @@ struct PostsRequest: Request {
         }
     }
 
-    var method: HTTPMethod {
+    var method: APIKit.HTTPMethod {
         return .get
     }
 

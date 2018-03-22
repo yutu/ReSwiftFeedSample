@@ -14,6 +14,23 @@
 		DC51721E20635F0700D53BE5 /* FeedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51721D20635F0700D53BE5 /* FeedEndpoint.swift */; };
 		DC51722120635F5700D53BE5 /* Post+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722020635F5700D53BE5 /* Post+Decodable.swift */; };
 		DC51722320635FC300D53BE5 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722220635FC300D53BE5 /* Transformer.swift */; };
+		DC517225206362E600D53BE5 /* feed_get.json in Resources */ = {isa = PBXBuildFile; fileRef = DC517224206362E600D53BE5 /* feed_get.json */; };
+		DC51722C206363F800D53BE5 /* HTTPStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722B206363F800D53BE5 /* HTTPStub.swift */; };
+		DC51722E2063642C00D53BE5 /* ImageStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722D2063642C00D53BE5 /* ImageStub.swift */; };
+		DC5172302063645400D53BE5 /* WebAPIEndpointStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722F2063645400D53BE5 /* WebAPIEndpointStub.swift */; };
+		DC5172322063647100D53BE5 /* no_content.json in Resources */ = {isa = PBXBuildFile; fileRef = DC5172312063647100D53BE5 /* no_content.json */; };
+		DC5172342063648100D53BE5 /* feed_get.json in Resources */ = {isa = PBXBuildFile; fileRef = DC517224206362E600D53BE5 /* feed_get.json */; };
+		DC5172352063648100D53BE5 /* no_content.json in Resources */ = {isa = PBXBuildFile; fileRef = DC5172312063647100D53BE5 /* no_content.json */; };
+		DC5172362063648500D53BE5 /* HTTPStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722B206363F800D53BE5 /* HTTPStub.swift */; };
+		DC5172372063648500D53BE5 /* ImageStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722D2063642C00D53BE5 /* ImageStub.swift */; };
+		DC5172382063648500D53BE5 /* WebAPIEndpointStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51722F2063645400D53BE5 /* WebAPIEndpointStub.swift */; };
+		DC51723A2063649A00D53BE5 /* post_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9C2298206356FB0028F2E3 /* post_1.png */; };
+		DC51723B2063649A00D53BE5 /* post_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9C2299206356FC0028F2E3 /* post_2.png */; };
+		DC51723C2063649A00D53BE5 /* user_icon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9C2297206356FB0028F2E3 /* user_icon_1.png */; };
+		DC51723E206364BB00D53BE5 /* FeedStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51723D206364BB00D53BE5 /* FeedStub.swift */; };
+		DC5172402063659900D53BE5 /* StubProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51723F2063659900D53BE5 /* StubProvider.swift */; };
+		DC517241206365DE00D53BE5 /* StubProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51723F2063659900D53BE5 /* StubProvider.swift */; };
+		DC5172422063673F00D53BE5 /* FeedStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51723D206364BB00D53BE5 /* FeedStub.swift */; };
 		DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC684C8720632E070062D6B4 /* AppDelegate.swift */; };
 		DC684C8F20632E070062D6B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC684C8E20632E070062D6B4 /* Assets.xcassets */; };
 		DC684C9220632E070062D6B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */; };
@@ -52,6 +69,13 @@
 		DC51721D20635F0700D53BE5 /* FeedEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpoint.swift; sourceTree = "<group>"; };
 		DC51722020635F5700D53BE5 /* Post+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Decodable.swift"; sourceTree = "<group>"; };
 		DC51722220635FC300D53BE5 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		DC517224206362E600D53BE5 /* feed_get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feed_get.json; sourceTree = "<group>"; };
+		DC51722B206363F800D53BE5 /* HTTPStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStub.swift; sourceTree = "<group>"; };
+		DC51722D2063642C00D53BE5 /* ImageStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStub.swift; sourceTree = "<group>"; };
+		DC51722F2063645400D53BE5 /* WebAPIEndpointStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIEndpointStub.swift; sourceTree = "<group>"; };
+		DC5172312063647100D53BE5 /* no_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = no_content.json; sourceTree = "<group>"; };
+		DC51723D206364BB00D53BE5 /* FeedStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStub.swift; sourceTree = "<group>"; };
+		DC51723F2063659900D53BE5 /* StubProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubProvider.swift; sourceTree = "<group>"; };
 		DC684C8420632E070062D6B4 /* ReSwiftFeedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftFeedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC684C8720632E070062D6B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC684C8E20632E070062D6B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +170,39 @@
 			path = Decodable;
 			sourceTree = "<group>";
 		};
+		DC517228206363C600D53BE5 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				DC51723F2063659900D53BE5 /* StubProvider.swift */,
+				DC51722B206363F800D53BE5 /* HTTPStub.swift */,
+				DC51722D2063642C00D53BE5 /* ImageStub.swift */,
+				DC51722F2063645400D53BE5 /* WebAPIEndpointStub.swift */,
+				DC51723D206364BB00D53BE5 /* FeedStub.swift */,
+				DC5172392063648B00D53BE5 /* Image */,
+				DC5172332063647400D53BE5 /* Json */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		DC5172332063647400D53BE5 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				DC5172312063647100D53BE5 /* no_content.json */,
+				DC517224206362E600D53BE5 /* feed_get.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		DC5172392063648B00D53BE5 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C2298206356FB0028F2E3 /* post_1.png */,
+				DC9C2299206356FC0028F2E3 /* post_2.png */,
+				DC9C2297206356FB0028F2E3 /* user_icon_1.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		DC684C7B20632E070062D6B4 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +242,7 @@
 			children = (
 				DC684C9E20632E080062D6B4 /* Info.plist */,
 				DC684CAC206331EE0062D6B4 /* ReSwiftFeedSampleTests-Bridging-Header.h */,
+				DC517228206363C600D53BE5 /* Stub */,
 				DC684CAB206331DA0062D6B4 /* Presentation */,
 			);
 			path = ReSwiftFeedSampleTests;
@@ -237,21 +295,10 @@
 		DC9C2295206356DE0028F2E3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				DC9C2296206356F20028F2E3 /* Fake */,
 				DC684C8E20632E070062D6B4 /* Assets.xcassets */,
 				DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		DC9C2296206356F20028F2E3 /* Fake */ = {
-			isa = PBXGroup;
-			children = (
-				DC9C2298206356FB0028F2E3 /* post_1.png */,
-				DC9C2299206356FC0028F2E3 /* post_2.png */,
-				DC9C2297206356FB0028F2E3 /* user_icon_1.png */,
-			);
-			path = Fake;
 			sourceTree = "<group>";
 		};
 		F4D42DA615EAB5E7DF7452FE /* Pods */ = {
@@ -357,9 +404,11 @@
 			files = (
 				DC684C9220632E070062D6B4 /* LaunchScreen.storyboard in Resources */,
 				DC9C229B206356FC0028F2E3 /* post_1.png in Resources */,
+				DC517225206362E600D53BE5 /* feed_get.json in Resources */,
 				DC9C229A206356FC0028F2E3 /* user_icon_1.png in Resources */,
 				DC684C8F20632E070062D6B4 /* Assets.xcassets in Resources */,
 				DC9C229C206356FC0028F2E3 /* post_2.png in Resources */,
+				DC5172352063648100D53BE5 /* no_content.json in Resources */,
 				DC9C228620634B0F0028F2E3 /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +417,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC51723B2063649A00D53BE5 /* post_2.png in Resources */,
+				DC51723C2063649A00D53BE5 /* user_icon_1.png in Resources */,
+				DC5172322063647100D53BE5 /* no_content.json in Resources */,
+				DC5172342063648100D53BE5 /* feed_get.json in Resources */,
+				DC51723A2063649A00D53BE5 /* post_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +474,7 @@
 				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Himotoki/Himotoki.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -429,6 +484,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Himotoki.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -475,6 +531,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftFeedSampleTests/Pods-ReSwiftFeedSampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
@@ -482,6 +539,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
@@ -514,15 +572,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9C228E20634FD90028F2E3 /* ShowFeed.swift in Sources */,
+				DC5172422063673F00D53BE5 /* FeedStub.swift in Sources */,
 				DC9C2291206354F10028F2E3 /* Post.swift in Sources */,
 				DC51721E20635F0700D53BE5 /* FeedEndpoint.swift in Sources */,
+				DC5172362063648500D53BE5 /* HTTPStub.swift in Sources */,
 				DC9C228C20634F130028F2E3 /* Application.swift in Sources */,
 				DC51721720635E1700D53BE5 /* APIKit.Session+Rx.swift in Sources */,
+				DC517241206365DE00D53BE5 /* StubProvider.swift in Sources */,
+				DC5172382063648500D53BE5 /* WebAPIEndpointStub.swift in Sources */,
 				DC9C2294206355610028F2E3 /* PostRepository.swift in Sources */,
 				DC51722120635F5700D53BE5 /* Post+Decodable.swift in Sources */,
 				DC51722320635FC300D53BE5 /* Transformer.swift in Sources */,
 				DC9C2282206346330028F2E3 /* FeedViewController.swift in Sources */,
 				DC9C22842063486B0028F2E3 /* FeedTableViewCell.swift in Sources */,
+				DC5172372063648500D53BE5 /* ImageStub.swift in Sources */,
 				DC51721920635E4000D53BE5 /* Request.swift in Sources */,
 				DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */,
 			);
@@ -532,7 +595,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5172402063659900D53BE5 /* StubProvider.swift in Sources */,
+				DC51723E206364BB00D53BE5 /* FeedStub.swift in Sources */,
+				DC51722E2063642C00D53BE5 /* ImageStub.swift in Sources */,
 				DC684CAE206331EE0062D6B4 /* FeedViewControllerSpec.swift in Sources */,
+				DC5172302063645400D53BE5 /* WebAPIEndpointStub.swift in Sources */,
+				DC51722C206363F800D53BE5 /* HTTPStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

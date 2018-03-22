@@ -14,6 +14,19 @@ PODS:
   - Nimble-Snapshots/Core (6.3.0):
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
   - Quick (1.2.0)
   - Result (3.2.4)
   - ReSwift (4.0.1)
@@ -26,6 +39,7 @@ DEPENDENCIES:
   - Kingfisher
   - Nimble
   - Nimble-Snapshots
+  - OHHTTPStubs/Swift
   - Quick
   - ReSwift
   - RxSwift
@@ -38,12 +52,13 @@ SPEC CHECKSUMS:
   Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 388506af07a906cf7724366a2f205baa7aaed685
+PODFILE CHECKSUM: 0c790c53c606b9c6e6cb562d853873256e9cb6e1
 
 COCOAPODS: 1.4.0
