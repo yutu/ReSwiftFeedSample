@@ -12,12 +12,13 @@ import Quick
 import Nimble
 import Nimble_Snapshots
 import OHHTTPStubs
+import Swinject
+import SwinjectStoryboard
 
 final class FeedViewControllerSpec: QuickSpec {
     override func spec() {
         describe("FeedViewController") {
             var window: UIWindow!
-            var stubDescriptor: OHHTTPStubsDescriptor!
             var stubProvider: StubProvider!
 
             beforeEach {
@@ -26,7 +27,7 @@ final class FeedViewControllerSpec: QuickSpec {
 
                 window = UIWindow()
                 window.makeKeyAndVisible()
-                let viewController: UIViewController! = UIStoryboard(name: "Feed", bundle: Bundle(for: AppDelegate.self)).instantiateInitialViewController()
+                let viewController: UIViewController! = SwinjectStoryboard.create(name: "Feed", bundle: nil, container: ContainerProvider.default).instantiateInitialViewController()
                 window.addSubview(viewController.view)
             }
 
