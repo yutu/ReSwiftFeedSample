@@ -22,7 +22,7 @@ final class FeedViewController: UITableViewController {
             state: nil
         )
 
-        store.dispatch(ShowFeed.load())
+        store.dispatch(ShowFeed.load(postRepository: PostRepository()))
     }
 
     override func viewWillAppear(_ animated: Bool) {

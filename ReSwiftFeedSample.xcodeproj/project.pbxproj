@@ -18,6 +18,11 @@
 		DC9C228620634B0F0028F2E3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9C228820634B0F0028F2E3 /* Feed.storyboard */; };
 		DC9C228C20634F130028F2E3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C228B20634F130028F2E3 /* Application.swift */; };
 		DC9C228E20634FD90028F2E3 /* ShowFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C228D20634FD90028F2E3 /* ShowFeed.swift */; };
+		DC9C2291206354F10028F2E3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C2290206354F00028F2E3 /* Post.swift */; };
+		DC9C2294206355610028F2E3 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C2293206355610028F2E3 /* PostRepository.swift */; };
+		DC9C229A206356FC0028F2E3 /* user_icon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9C2297206356FB0028F2E3 /* user_icon_1.png */; };
+		DC9C229B206356FC0028F2E3 /* post_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9C2298206356FB0028F2E3 /* post_1.png */; };
+		DC9C229C206356FC0028F2E3 /* post_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9C2299206356FC0028F2E3 /* post_2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		DC9C228720634B0F0028F2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		DC9C228B20634F130028F2E3 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DC9C228D20634FD90028F2E3 /* ShowFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFeed.swift; sourceTree = "<group>"; };
+		DC9C2290206354F00028F2E3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DC9C2293206355610028F2E3 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		DC9C2297206356FB0028F2E3 /* user_icon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon_1.png; sourceTree = "<group>"; };
+		DC9C2298206356FB0028F2E3 /* post_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_1.png; sourceTree = "<group>"; };
+		DC9C2299206356FC0028F2E3 /* post_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +118,8 @@
 				DC684C8720632E070062D6B4 /* AppDelegate.swift */,
 				DC9C227A206332EF0028F2E3 /* Presentation */,
 				DC9C228A20634EE80028F2E3 /* Application */,
-				DC684C8E20632E070062D6B4 /* Assets.xcassets */,
-				DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */,
+				DC9C228F206354E00028F2E3 /* Domain */,
+				DC9C2295206356DE0028F2E3 /* Resource */,
 				DC684C9320632E070062D6B4 /* Info.plist */,
 			);
 			path = ReSwiftFeedSample;
@@ -150,6 +160,43 @@
 				DC9C228D20634FD90028F2E3 /* ShowFeed.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		DC9C228F206354E00028F2E3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C2292206354F40028F2E3 /* Post */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DC9C2292206354F40028F2E3 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C2290206354F00028F2E3 /* Post.swift */,
+				DC9C2293206355610028F2E3 /* PostRepository.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		DC9C2295206356DE0028F2E3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C2296206356F20028F2E3 /* Fake */,
+				DC684C8E20632E070062D6B4 /* Assets.xcassets */,
+				DC684C9020632E070062D6B4 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DC9C2296206356F20028F2E3 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C2298206356FB0028F2E3 /* post_1.png */,
+				DC9C2299206356FC0028F2E3 /* post_2.png */,
+				DC9C2297206356FB0028F2E3 /* user_icon_1.png */,
+			);
+			path = Fake;
 			sourceTree = "<group>";
 		};
 		F4D42DA615EAB5E7DF7452FE /* Pods */ = {
@@ -254,7 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC684C9220632E070062D6B4 /* LaunchScreen.storyboard in Resources */,
+				DC9C229B206356FC0028F2E3 /* post_1.png in Resources */,
+				DC9C229A206356FC0028F2E3 /* user_icon_1.png in Resources */,
 				DC684C8F20632E070062D6B4 /* Assets.xcassets in Resources */,
+				DC9C229C206356FC0028F2E3 /* post_2.png in Resources */,
 				DC9C228620634B0F0028F2E3 /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,11 +362,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftFeedSample/Pods-ReSwiftFeedSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,7 +453,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9C228E20634FD90028F2E3 /* ShowFeed.swift in Sources */,
+				DC9C2291206354F10028F2E3 /* Post.swift in Sources */,
 				DC9C228C20634F130028F2E3 /* Application.swift in Sources */,
+				DC9C2294206355610028F2E3 /* PostRepository.swift in Sources */,
 				DC9C2282206346330028F2E3 /* FeedViewController.swift in Sources */,
 				DC9C22842063486B0028F2E3 /* FeedTableViewCell.swift in Sources */,
 				DC684C8820632E070062D6B4 /* AppDelegate.swift in Sources */,
