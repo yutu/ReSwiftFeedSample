@@ -4,6 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - Kingfisher (4.6.3)
   - Nimble (7.0.3)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
@@ -16,6 +17,7 @@ PODS:
   - SwiftLint (0.25.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - Nimble
   - Nimble-Snapshots
   - Quick
@@ -25,6 +27,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
@@ -32,6 +35,6 @@ SPEC CHECKSUMS:
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 60614f54939087f75dd08ff2c84014b49d8ea4cf
+PODFILE CHECKSUM: bebf51536fdcde0d944822d1d5d311fa045d3742
 
 COCOAPODS: 1.4.0
