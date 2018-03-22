@@ -41,7 +41,7 @@ extension ShowFeed {
 
     static func load(postRepository: PostRepository) -> ActionCreator {
         return { (state, store) in
-            _ = postRepository.load().subscribe(onSuccess: { (posts) in
+            _ = postRepository.feed().subscribe(onSuccess: { (posts) in
                 store.dispatch(Action.succeedLoading(posts: posts))
             }, onError: { (error) in
                 store.dispatch(Action.failLoading(error: error))

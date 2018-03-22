@@ -1,0 +1,26 @@
+[
+    {
+        "id": 3,
+        "body": "僕のかわいいエリザベスの写真です！",
+        "photo": "https://api.sample.com/post_1.png",
+        "created_at": "2018-03-24T03:00:00Z",
+        "author_name": "yutu",
+        "author_icon": "https://api.sample.com/user_icon_1.png"
+    },
+    {
+        "id": 2,
+        "body": "僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！僕のかわいいポン吉の写真です！",
+        "photo": "https://api.sample.com/post_2.png",
+        "created_at": "2018-03-23T02:00:00Z",
+        "author_name": "yutu",
+        "author_icon": "https://api.sample.com/user_icon_1.png"
+    },
+    {
+        "id": 1,
+        "body": "今日はドッグランに行ってきました！エリザベスもポン吉もいっぱい走りました！",
+        "photo": null,
+        "created_at": "2018-03-22T01:00:00Z",
+        "author_name": "yutu",
+        "author_icon": "https://api.sample.com/user_icon_1.png"
+    }
+]
