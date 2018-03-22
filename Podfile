@@ -7,6 +7,8 @@ target 'ReSwiftFeedSample' do
   pod 'ReSwift'
   pod 'RxSwift'
   pod 'Kingfisher'
+  pod 'APIKit'
+  pod 'Himotoki'
 
   target 'ReSwiftFeedSampleTests' do
     inherit! :search_paths

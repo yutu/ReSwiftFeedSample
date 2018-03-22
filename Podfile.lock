@@ -1,9 +1,12 @@
 PODS:
+  - APIKit (3.2.1):
+    - Result (~> 3.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - Himotoki (3.1.0)
   - Kingfisher (4.6.3)
   - Nimble (7.0.3)
   - Nimble-Snapshots (6.3.0):
@@ -12,11 +15,14 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
   - Quick (1.2.0)
+  - Result (3.2.4)
   - ReSwift (4.0.1)
   - RxSwift (4.1.2)
   - SwiftLint (0.25.0)
 
 DEPENDENCIES:
+  - APIKit
+  - Himotoki
   - Kingfisher
   - Nimble
   - Nimble-Snapshots
@@ -26,15 +32,18 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC CHECKSUMS:
+  APIKit: a39ff72ac44efc15513fd1b98800f63c525be61b
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Himotoki: b09643fa5456d49bda43d0fb4e30dfa79e37f72f
   Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: bebf51536fdcde0d944822d1d5d311fa045d3742
+PODFILE CHECKSUM: 388506af07a906cf7724366a2f205baa7aaed685
 
 COCOAPODS: 1.4.0
