@@ -7,5 +7,8 @@ target 'ReSwiftFeedSample' do
 
   target 'ReSwiftFeedSampleTests' do
     inherit! :search_paths
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'Nimble-Snapshots'
   end
 end

@@ -135,6 +135,7 @@
 				DC684C8220632E070062D6B4 /* Resources */,
 				7D2ADB88EA7609C54EA5946D /* [CP] Embed Pods Frameworks */,
 				ABBF328E654D74723756AC27 /* [CP] Copy Pods Resources */,
+				DC684CA72063304A0062D6B4 /* SwiftLint Run Script */,
 			);
 			buildRules = (
 			);
@@ -314,14 +315,37 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftFeedSampleTests/Pods-ReSwiftFeedSampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwiftFeedSampleTests/Pods-ReSwiftFeedSampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DC684CA72063304A0062D6B4 /* SwiftLint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -512,7 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AE4D1FA958DF2338A983509 /* Pods-ReSwiftFeedSampleTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReSwiftFeedSampleTests/Info.plist;
@@ -529,7 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B10FDE077CD0EB969F364625 /* Pods-ReSwiftFeedSampleTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReSwiftFeedSampleTests/Info.plist;
