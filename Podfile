@@ -4,6 +4,7 @@ target 'ReSwiftFeedSample' do
   use_frameworks!
 
   pod 'SwiftLint'
+  pod 'ReSwift'
 
   target 'ReSwiftFeedSampleTests' do
     inherit! :search_paths
