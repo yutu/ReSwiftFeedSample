@@ -12,11 +12,11 @@ import Himotoki
 
 struct FeedRequest: Request {
     struct Response: Himotoki.Decodable {
-        let post: [Post]
+        let posts: [Post]
 
         public static func decode(_ e: Extractor) throws -> Response {
             return try Response(
-                post: Himotoki.decodeArray(e.rawValue)
+                posts: Himotoki.decodeArray(e.rawValue)
             )
         }
     }

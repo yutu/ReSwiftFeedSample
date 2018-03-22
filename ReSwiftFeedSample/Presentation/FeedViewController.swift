@@ -8,9 +8,11 @@
 
 import UIKit
 import ReSwift
+import APIKit
 
 final class FeedViewController: UITableViewController {
     var store: AppStore!
+    private let stubProvider = StubProvider()
 
     private var posts: [Post] = []
 
@@ -22,7 +24,11 @@ final class FeedViewController: UITableViewController {
             state: nil
         )
 
-        store.dispatch(ShowFeed.load(postRepository: PostRepository()))
+        stubProvider.stub()
+
+        let session = APIKit.Session(adapter: URLSessionAdapter(configuration: URLSessionConfiguration.default))
+        let postRepository = PostNetworkingRepository(session: session)
+        store.dispatch(ShowFeed.load(postRepository: postRepository))
     }
 
     override func viewWillAppear(_ animated: Bool) {

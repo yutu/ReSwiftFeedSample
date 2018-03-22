@@ -11,13 +11,19 @@ import Foundation
 import Quick
 import Nimble
 import Nimble_Snapshots
+import OHHTTPStubs
 
 final class FeedViewControllerSpec: QuickSpec {
     override func spec() {
         describe("FeedViewController") {
             var window: UIWindow!
+            var stubDescriptor: OHHTTPStubsDescriptor!
+            var stubProvider: StubProvider!
 
             beforeEach {
+                stubProvider = StubProvider()
+                stubProvider.stub()
+
                 window = UIWindow()
                 window.makeKeyAndVisible()
                 let viewController: UIViewController! = UIStoryboard(name: "Feed", bundle: Bundle(for: AppDelegate.self)).instantiateInitialViewController()
@@ -26,6 +32,7 @@ final class FeedViewControllerSpec: QuickSpec {
 
             afterEach {
                 window = nil
+                stubProvider.removeAllStubs()
             }
 
             context("when returns feed") {
