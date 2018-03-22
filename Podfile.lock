@@ -12,6 +12,7 @@ PODS:
     - Nimble (~> 7.0)
   - Quick (1.2.0)
   - ReSwift (4.0.1)
+  - RxSwift (4.1.2)
   - SwiftLint (0.25.0)
 
 DEPENDENCIES:
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - Nimble-Snapshots
   - Quick
   - ReSwift
+  - RxSwift
   - SwiftLint
 
 SPEC CHECKSUMS:
@@ -27,8 +29,9 @@ SPEC CHECKSUMS:
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 293b748525b80a6bfc2b384e7f58b140d583e5bc
+PODFILE CHECKSUM: 60614f54939087f75dd08ff2c84014b49d8ea4cf
 
 COCOAPODS: 1.4.0
